@@ -15,7 +15,8 @@
         <ul class="treeview-menu">
             <li><a href="?menu=product"><i class="fa fa-arrow-circle-right"></i> Input Product</a></li>
             <li><a href="?menu=setting"><i class="fa fa-arrow-circle-right"></i> Input Setting</a></li>
+            <li><a href="?menu=banner"><i class="fa fa-arrow-circle-right"></i> Input Banner</a></li>
         </ul>
     </li>
-    
+
 </ul>
