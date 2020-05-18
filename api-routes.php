@@ -1,6 +1,5 @@
 <?php
     require_once 'conn/config.php';
-    $login->login_redir();
     class API {
     var $db;
         function selectData() {

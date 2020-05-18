@@ -4,10 +4,10 @@ $login->login_redir();
  ?>
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminPTC | Dashboard</title>
+  <title>AdminJS | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -52,11 +52,11 @@ $login->login_redir();
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="#" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>P</b>TC</span>
+      <span class="logo-mini">JS</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>PTC</span>
+      <span class="logo-lg"><b>Admin</b>JS</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -68,47 +68,7 @@ $login->login_redir();
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           
-          <!-- Notifications: style can be found in dropdown.less -->
-          <li class="dropdown notifications-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
-              <span class="label label-danger">5</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 5 notifications</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-warning text-yellow"></i> Barang 1 Stock tersisa 2 pcs
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-users text-red"></i> 5 new members joined
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-user text-red"></i> You changed your username
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <!-- <li class="footer"><a href="#">View all</a></li> -->
-            </ul>
-          </li>
+          
           
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
@@ -121,8 +81,8 @@ $login->login_redir();
                 <img src="dist/img/avatar.png" class="img-circle" alt="User Image">
 
                 <p>
-                  Sales & Marketing
-                  <small>Member since Mei 2018</small>
+                  Administrator
+                  
                 </p>
               </li>
               <!-- Menu Body -->
@@ -169,7 +129,7 @@ $login->login_redir();
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0.0
     </div>
-    <strong>Copyright &copy; 2019 <a href="#">Prime Trade Center</a>.</strong> All rights
+    <strong>Copyright &copy; 2020 <a href="#">Admin JS</a>.</strong> All rights
     reserved.
   </footer>
 </div>
