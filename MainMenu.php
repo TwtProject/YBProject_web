@@ -15,7 +15,10 @@
 			case 'setting':
 				if(!file_exists ("Inputan/setting.php")) die ("Empty Main Page!"); 
 				include "Inputan/setting.php";			break;
-			
+			case 'banner':
+				if (!file_exists("Inputan/banner.php")) die("Empty Main Page!");
+				include "Inputan/banner.php";
+				break;
 
 			default:
 				if(!file_exists ("dashboard.php")) die ("Empty Main Page!"); 
