@@ -26,10 +26,22 @@
                     'thumb' => $result['gambar']
                 ];
             }
+            $banner = array();
+            $data3 = $db->prepare('SELECT * FROM tb_banner ORDER BY id LIMIT 6');
+            $data3->execute();
+            while ($res = $data3->fetch(PDO::FETCH_ASSOC)) {
+                $banner[] = [
+                    'id' => $res['id'],
+                    'nama_produk' => $res['nama_produk'],
+                    'link' => $res['link'],
+                    'gambar' => $res['gambar']
+                ];
+            }
             $status = array(
                 'status' => "true",
                 'message' => "Data fetch successfully",
                 'data' => $products,
+                'banner' => $banner,
                 'setting' => $setting
             );
             return json_encode($status);
