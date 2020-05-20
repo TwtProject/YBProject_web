@@ -97,6 +97,7 @@ if (isset($_GET["hapus"])) {
                                 <th>No</th>
                                 <th>Nomor Whatsapp</th>
                                 <th>Isi Pesan</th>
+                                <th>Gambar</th>
                                 <th colspan="2">Aksi</th>
                             </tr>
                         </thead>
@@ -114,6 +115,7 @@ if (isset($_GET["hapus"])) {
                                         <td><?php echo $count; ?></td>
                                         <td><?php echo htmlentities($row->whatsapp) ?></td>
                                         <td><?php echo htmlentities($row->isi_pesan) ?></td>
+                                        <td><?php echo htmlentities($row->gambar) ?></td>
                                         <td><a href="dashboard.php?menu=setting&edit&id=<?php echo htmlentities($row->id) ?>">
                                                 <div class="text-center">
                                                     <span class="glyphicon glyphicon-edit"></span>
