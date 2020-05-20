@@ -1,22 +1,24 @@
 <?php
 require_once 'conn/config.php';
 if (!empty($_POST["add_data"])) {
-    $sql = "INSERT INTO tb_setting (whatsapp, isi_pesan) VALUES (:whatsapp, :isi_pesan)";
+    $sql = "INSERT INTO tb_setting (whatsapp, isi_pesan, gambar) VALUES (:whatsapp, :isi_pesan, :gambar)";
     $pdo_statement = $db->prepare($sql);
     $result = $pdo_statement->execute(array(
         ':whatsapp' => $_POST['whatsapp'],
-        ':isi_pesan' => $_POST['isi_pesan']
+        ':isi_pesan' => $_POST['isi_pesan'],
+        ':gambar' => $_POST['gambar']
     ));
     if (!empty($result)) {
         echo "<script>alert('Data Berhasil Disimpan');document.location.href='dashboard.php?menu=setting'</script>";
     }
 }
 if (!empty($_POST["update_data"])) {
-    $sql = "UPDATE tb_setting SET whatsapp = :whatsapp, isi_pesan = :isi_pesan WHERE id = '$_GET[id]'";
+    $sql = "UPDATE tb_setting SET whatsapp = :whatsapp, isi_pesan = :isi_pesan, gambar = :gambar WHERE id = '$_GET[id]'";
     $pdo_statement = $db->prepare($sql);
     $result = $pdo_statement->execute(array(
         ':whatsapp' => $_POST['whatsapp'],
-        ':isi_pesan' => $_POST['isi_pesan']
+        ':isi_pesan' => $_POST['isi_pesan'],
+        ':gambar' => $_POST['gambar']
     ));
     if (!empty($result)) {
         echo "<script>alert('Data Berhasil Diupdate');document.location.href='dashboard.php?menu=setting'</script>";
@@ -67,6 +69,10 @@ if (isset($_GET["hapus"])) {
                                 <div class="form-group">
                                     <label>Isi Pesan</label>
                                     <input type="text" class="form-control" name="isi_pesan" value="<?php echo @$result[0][2] ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label>Gambar</label>
+                                    <input type="text" class="form-control" name="gambar" value="<?php echo @$result[0][3] ?>">
                                 </div>
                                 <?php if (isset($_GET['edit'])) {  ?>
                                     <input type="submit" class="btn btn-block btn-primary" name="update_data" value="Update">
