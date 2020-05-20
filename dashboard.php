@@ -7,7 +7,7 @@ $login->login_redir();
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminJS | Dashboard</title>
+  <title>AdminYB | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -54,9 +54,9 @@ $login->login_redir();
     <!-- Logo -->
     <a href="#" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini">JS</span>
+      <span class="logo-mini">YB</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>JS</span>
+      <span class="logo-lg"><b>Admin</b>YB</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -129,7 +129,7 @@ $login->login_redir();
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0.0
     </div>
-    <strong>Copyright &copy; 2020 <a href="#">Admin JS</a>.</strong> All rights
+    <strong>Copyright &copy; 2020 <a href="#">Admin YB</a>.</strong> All rights
     reserved.
   </footer>
 </div>
